@@ -1,7 +1,7 @@
 package com.thoughtworks;
 
 import java.util.ArrayList;
-import java.util.Random;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class App {
@@ -31,10 +31,9 @@ public class App {
     }
 
     public static void drawCards (ArrayList<Card> cards, int chooesCardNum) {
-        Random r = new Random();
+        Collections.shuffle(cards);
         for (int i = 0; i < chooesCardNum; i++) {
-            int num = r.nextInt(cards.size());
-            System.out.print(cards.get(num).getSuit().getValue() + cards.get(num).getNum().getValue() + " ");
+            System.out.print(cards.get(i).getSuit().getValue() + cards.get(i).getNum().getValue() + " ");
         }
     }
 }

@@ -9,9 +9,6 @@ public enum Suit {
         this.value = value;
     }
 
-    Suit() {
-    }
-
     public String getValue() {
         return value;
     }

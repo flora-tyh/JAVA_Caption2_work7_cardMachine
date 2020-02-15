@@ -17,9 +17,6 @@ public enum Num {
 
     private String value;
 
-    Num() {
-    }
-
     Num(String value) {
         this.value = value;
     }
